@@ -167,10 +167,10 @@ td.alert{color:var(--accent);font-weight:500}
           <div>
             <p>An internal platform that lets analysts injest SAR scenes quickly and consistently. I designed and built it end to end: the map-based annotation UI, the APIs, the GPU inference service and the scene catalogue.</p>
             <ul>
-              <li>Model-assisted annotation: a trained detector proposes objects and analysts accept or correct them.</li>
+              <li>Model-assisted: a trained detector proposes objects and analysts accept or correct them.</li>
               <li>Semi-automatic placement tools that use the regular geometry of real-world scenes, so one action injests many targets.</li>
               <li>Inference isolated in its own service with no database access, so it can be restarted, scaled or swapped without touching stored data.</li>
-              <li>Every annotation goes through one write path with an audit trail, whether hand-drawn or model-proposed.</li>
+              <li>Every injestion goes through one write path with an audit trail, whether hand-drawn or model-proposed.</li>
             </ul>
             <p class="stack">Python · FastAPI · PyTorch · rasterio · PostGIS / STAC · tile serving · React · Spring Security</p>
             <p class="note">Happy to walk through the architecture and tradeoffs in an interview.</p>
@@ -178,7 +178,7 @@ td.alert{color:var(--accent);font-weight:500}
           <div>
             <div class="services" role="list" aria-label="Service layout">
               <div role="listitem"><b>Map UI</b><span>drawing, review</span></div>
-              <div role="listitem"><b>Annotation API</b><span>only DB writer</span></div>
+              <div role="listitem"><b>Injestion API</b><span>only DB writer</span></div>
               <div role="listitem"><b>GPU inference</b><span>stateless, no DB</span></div>
               <div role="listitem"><b>Tile server</b><span>cloud-optimized rasters</span></div>
               <div role="listitem"><b>Scene catalogue</b><span>STAC</span></div>
